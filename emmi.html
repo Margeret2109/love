@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>About Emmi</title>
+  <style>
+    body, h1, p, button { font-family: "Courier", monospace; }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('letter.jpg');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 3.5em;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #a39193;
+      padding: 15px 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin: 0 20px;
+      padding: 12px 20px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background-color: lightgray;
+      color: white;
+      transform: translateY(-5px);
+    }
+    .container {
+      text-align: center;
+      margin: 30px;
+      padding: 30px;
+    }
+    .container h2 {
+      font-size: 2.5em;
+      color: #6b4f3f;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+    .story {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+      margin: auto;
+    }
+    .story img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+    .story h3 {
+      margin-top: 20px;
+      font-size: 1.8em;
+      color: #333;
+    }
+    .story p {
+      font-size: 1.2em;
+      color: #555;
+      line-height: 1.5;
+      margin-top: 15px;
+      text-align: justify;
+    }
+    button {
+      background-color: #6b4f3f;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1.2em;
+      margin-bottom: 20px;
+      transition: background-color 0.3s;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    button:hover {
+      background-color: #a39193;
+    }
+    .text-content {
+      display: none;
+      margin-top: 10px;
+      text-align: justify;
+      padding: 0 15px;
+    }
+    footer {
+      background-color: #a39193;
+      color: black;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 1rem;
+    }
+  </style>
+  <script>
+    function toggleText(id) {
+      var text = document.getElementById(id);
+      if (text.style.display === "none" || text.style.display === "") {
+        text.style.display = "block";
+      } else {
+        text.style.display = "none";
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      <br /><br />
+      <h1>About Emmi</h1>
+      <p>Here's my story, the journey that led me to you.</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="ourjourney.html">Our Journey</a>
+    <a href="letter.html">Letter</a>
+    <a href="bucketlist.html">Bucket List</a>
+    <a href="emmi.html">About Emmi</a>
+  </nav>
+
+  <div class="container">
+    <h2>Feelings</h2>
+    <div class="story">
+      <div>
+        <button onclick="toggleText('whoami')">Who Am I?</button>
+        <div id="whoami" class="text-content">
+          <p>I'm Emmi, someone who loves to embrace every part of life. I'm a firstborn daughter. As I grew up, I tend to be an independent person. I also a person who believe in the power of kindness and the beauty in everyday things. I’m someone who values close relationships, family and the laughter shared with those I love. I tend to be a bit of an introvert but once I’m comfortable, I’m all in whether it’s for deep, meaningful conversations or spontaneous adventures.</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="toggleText('reason')">Reason I'm not able to share problems with you</button>
+        <div id="reason" class="text-content">
+          <p>I want to start by saying that it’s not because I don’t trust you. You mean the world to me and I know that you’d never judge me. But sometimes, I find it hard to open up about what’s really going on inside my head. It’s not because I don’t want to share my thoughts and struggles with you but because I don’t want to burden you with my worries. I’ve always been someone who tries to handle things on my own even if I don’t always succeed. It’s just the way I’ve been taught to cope — to stay strong and solve problems without leaning on others. And while I know that you would be there for me no matter what, there’s a part of me that feels like I should be able to manage it all by myself. At times, I also feel like I need space to process everything before I can talk about it. I don’t want to drag you into my stress until I’m ready to work through it. I want to protect you from any negativity or worry that might come with what I’m feeling. But that doesn't mean I don’t value your support. It just means I’m still learning how to let go of the need to always be in control. And I hope that, in time, I’ll be able to share more with you — when I’m ready. You deserve to know everything but I want to make sure I’m in the right place to share it in a way that doesn’t make you feel like you need to fix everything. I promise, I do want to open up to you more. I just need a little time to get there.</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="toggleText('thoughts')">What I always thought about you</button>
+        <div id="thoughts" class="text-content">
+          <p>From the very first moment we met, I never expected to find someone like you through a dating channel, a person who would completely change the way I see the world again but that’s exactly what you’ve done. At first, I thought you were just another person I’d meet along the way, someone I’d talk to for a while and then move on from. But as I got to know you, everything changed. What I thought was just a simple connection grew into something far deeper. I realized that you weren’t like anyone I had ever met before. You are kind in ways that I never thought possible. You have a heart so full of love, care and generosity, you always give me a comfort words. There are moments when you do the smallest things — like sending a message just to check on me, or laughing at my bad jokes — that make me feel like I’m the luckiest person in the world. When I think of you, I see someone who is strong, yet gentle. Someone who is wise but still so curious, always open to learning more about life and the people around you. You make me want to be better, you have this way of making me feel safe, even when life feels uncertain. I used to think that I had to handle everything on my own but you’ve shown me that it’s okay to lean on someone — and that someone can be you. And what I thought about you in the beginning has turned into something much greater than I could’ve ever imagined — a love that feels like home.</p>
+        </div>
+      </div>
+
+      <div>
+        <button onclick="toggleText('comfort')">Comfort Words</button>
+        <div id="comfort" class="text-content">
+          <p>I want you to know that I’m always here for you, no matter what. You mean the world to me and I love you just as you are—imperfections and all. You don’t have to be perfect, just be yourself because that's who I love. We all have moments of doubt but please remember that you are so much stronger than you realize. You’ve already accomplished so much and I’m incredibly proud of you. You make me feel happy and loved every single day and that’s a gift I cherish deeply. Never forget how amazing you are because I believe in you with all my heart.I don't care about your imperfections, how you looks like as long as your love is pure enough for me, you have everything about me. Please don't have an insecure in you, you are smart and fine enough to attract me. Love you so much.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 emmi. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
